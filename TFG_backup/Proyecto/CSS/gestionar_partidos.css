@@ -1,0 +1,125 @@
+@import url('variables.css');
+
+.admin-page .container {
+    display: block;
+    min-height: auto;
+    padding-bottom: 40px;
+}
+
+.admin-card {
+    width: 100%;
+    background: var(--card-bg);
+    border: 1px solid var(--border-accent);
+    border-radius: 22px;
+    padding: 30px;
+    margin-bottom: 24px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.admin-card h2 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.admin-form-grid {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.admin-form-grid .span-full {
+    grid-column: 1 / -1;
+}
+
+.admin-card select,
+.admin-card input[type="text"],
+.admin-card input[type="number"],
+.admin-card input[type="datetime-local"],
+.admin-card input[type="file"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    border: none;
+    border-radius: 12px;
+    background: var(--bg-dark);
+    color: var(--text-main);
+    border: 1px solid var(--border-accent);
+    font-size: 15px;
+}
+
+.admin-card label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.admin-table-wrap {
+    overflow-x: auto;
+}
+
+.admin-card table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 720px;
+}
+
+.admin-card th {
+    background: var(--surface-accent);
+    padding: 14px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.admin-card td {
+    padding: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    vertical-align: middle;
+}
+
+.admin-card tr:hover {
+    background: var(--surface-accent);
+}
+
+.admin-card table button,
+.admin-card .danger {
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+    color: var(--text-on-primary);
+    transition: 0.25s;
+}
+
+.admin-card table button:hover {
+    transform: scale(1.06);
+}
+
+.admin-card .danger {
+    background: var(--danger) !important;
+}
+
+.admin-card details summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--primary);
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+@media (max-width: 768px) {
+    .admin-form-grid {
+        grid-template-columns: 1fr;
+    }
+}
