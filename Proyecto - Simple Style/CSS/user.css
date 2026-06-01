@@ -1,0 +1,322 @@
+/* =========================
+   GENERAL
+========================= */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: rgb(245, 247, 250);
+    color: rgb(31, 41, 55);
+    padding-top: 130px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(229, 231, 235);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgb(229, 231, 235);
+    background: white;
+}
+
+/* =========================
+   RIGHT SIDE NAV
+========================= */
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* =========================
+   SEARCH + SELECT
+========================= */
+
+#search,
+select {
+    padding: 10px 12px;
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 6px;
+    background: rgb(255, 255, 255);
+    color: rgb(31, 41, 55);
+    font-size: 14px;
+}
+
+#search {
+    width: 220px;
+}
+
+#search::placeholder {
+    color: rgb(209, 213, 219);
+}
+
+#search:focus,
+select:focus {
+    outline: none;
+    border-color: rgb(59, 130, 246);
+}
+
+/* =========================
+   NAV LINKS
+========================= */
+
+.fav-link {
+    text-decoration: none;
+    background: rgb(59, 130, 246);
+    color: rgb(255, 255, 255);
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.fav-link:hover {
+    opacity: 0.9;
+}
+
+.fav-count {
+    background: rgb(239, 68, 68);
+    padding: 3px 8px;
+    border-radius: 20px;
+    margin-left: 6px;
+    font-size: 12px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    padding: 20px;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* =========================
+   RATING
+========================= */
+
+.rank {
+    display: inline-block;
+    background: rgb(250, 204, 21);
+    color: rgb(31, 41, 55);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.img-container {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px;
+    overflow: hidden;
+    border: 3px solid rgb(229, 231, 235);
+}
+
+.player-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.card h3 {
+    margin: 10px 0 5px;
+    font-size: 22px;
+}
+
+.card p {
+    margin: 5px 0;
+    color: rgb(107, 114, 128);
+    font-size: 14px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.profile-btn {
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    background: rgb(59, 130, 246);
+    color: rgb(255, 255, 255);
+    transition: 0.2s;
+}
+
+.profile-btn:hover {
+    opacity: 0.9;
+}
+
+/* SELL BUTTON */
+
+.sell-btn {
+    background: rgb(34, 197, 94);
+}
+
+/* DELETE BUTTON */
+
+.delete-btn {
+    background: rgb(239, 68, 68);
+}
+
+/* =========================
+   PERFIL USUARIO
+========================= */
+
+.profile-dropdown {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #ffffff;
+    padding: 10px 15px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    flex-shrink: 0;
+}
+
+.profile-dropdown p {
+    margin: 0;
+    font-size: 14px;
+    color: #111827;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.profile-dropdown strong {
+    color: #2563eb;
+}
+
+/* =========================
+   BOTÓN CERRAR SESIÓN
+========================= */
+
+.logout-btn {
+    display: inline-block;
+    background: #ef4444;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: #dc2626;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-right {
+        justify-content: center;
+    }
+
+    .logo-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .profile-dropdown {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}   

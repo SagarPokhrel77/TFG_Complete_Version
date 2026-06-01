@@ -1,0 +1,283 @@
+/* =========================
+   GENERAL
+========================= */
+
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: rgb(245, 247, 250);
+
+    color: rgb(31, 41, 55);
+}
+
+/* =========================
+   TOP BAR
+========================= */
+
+.top-bar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 25px 40px;
+
+    background: rgb(255, 255, 255);
+
+    border-bottom: 1px solid rgb(229, 231, 235);
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.top-bar h2 {
+
+    margin: 0;
+
+    font-size: 32px;
+
+    font-weight: bold;
+}
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.back-btn {
+
+    text-decoration: none;
+
+    background: rgb(59, 130, 246);
+
+    color: rgb(255, 255, 255);
+
+    padding: 10px 18px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.back-btn:hover {
+
+    opacity: 0.9;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+
+    padding: 30px 40px;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 20px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+
+    background: rgb(255, 255, 255);
+
+    border: 1px solid rgb(229, 231, 235);
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+/* =========================
+   RATING
+========================= */
+
+.rank {
+
+    display: inline-block;
+
+    background: rgb(250, 204, 21);
+
+    color: rgb(31, 41, 55);
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+/* =========================
+   PLAYER IMAGE
+========================= */
+
+.card img {
+
+    width: 220px;
+
+    height: 220px;
+
+    object-fit: contain;
+
+    object-position: center;
+
+    background: rgb(245, 247, 250);
+
+    border-radius: 8px;
+
+    border: 1px solid rgb(229, 231, 235);
+
+    margin-bottom: 15px;
+}
+
+/* =========================
+   PLAYER NAME
+========================= */
+
+.card h3 {
+
+    margin: 10px 0 5px;
+
+    font-size: 24px;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.card p {
+
+    margin: 6px 0;
+
+    color: rgb(107, 114, 128);
+
+    font-size: 14px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.card button {
+
+    border: none;
+
+    padding: 10px 16px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+/* PROFILE BUTTON */
+
+.profile-btn {
+
+    background: rgb(59, 130, 246);
+
+    color: rgb(255, 255, 255);
+
+    margin-top: 10px;
+}
+
+.profile-btn:hover {
+
+    opacity: 0.9;
+}
+
+/* REMOVE BUTTON */
+
+.remove-btn {
+
+    background: rgb(239, 68, 68);
+
+    color: white;
+
+    margin-top: 10px;
+}
+
+.remove-btn:hover {
+
+    opacity: 0.9;
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.empty {
+
+    grid-column: 1/-1;
+
+    text-align: center;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    color: rgb(107, 114, 128);
+
+    padding: 60px 20px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .top-bar {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        text-align: center;
+    }
+
+    .container {
+
+        padding: 20px;
+    }
+
+    .grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .card h3 {
+
+        font-size: 22px;
+    }
+}
