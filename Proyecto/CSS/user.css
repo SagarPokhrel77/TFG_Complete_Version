@@ -1,0 +1,448 @@
+/* BODY */
+body {
+
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+
+    background:
+        linear-gradient(135deg,
+            #0f0c29 0%,
+            #302b63 50%,
+            #24243e 100%);
+
+    color: white;
+
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    padding: 20px;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+    backdrop-filter: blur(14px);
+
+    background:
+        rgba(10, 10, 30, 0.55);
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* LOGO */
+.logo {
+
+    font-size: 28px;
+
+    font-weight: 800;
+
+    margin-right: 20px;
+
+    background:
+        linear-gradient(90deg,
+            #ff00cc,
+            #00d4ff);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* SEARCH */
+#search {
+
+    width: 260px;
+
+    padding: 12px 16px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    outline: none;
+
+    background:
+        rgba(255, 255, 255, 0.08);
+
+    color: white;
+
+    font-size: 15px;
+
+    backdrop-filter: blur(10px);
+
+    transition: 0.3s;
+}
+
+#search::placeholder {
+    color: #cbd5e1;
+}
+
+#search:focus {
+
+    box-shadow:
+        0 0 20px rgba(255, 0, 204, 0.25);
+}
+
+/* SELECTS */
+select {
+
+    padding: 12px 15px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    outline: none;
+
+    background:
+        rgba(255, 255, 255, 0.08);
+
+    color: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(10px);
+
+    transition: 0.3s;
+}
+
+select:focus {
+
+    box-shadow:
+        0 0 18px rgba(0, 212, 255, 0.3);
+}
+
+/* OPTIONS */
+option {
+
+    background: #1e1b4b;
+
+    color: white;
+}
+
+/* LINKS */
+.fav-link {
+
+    text-decoration: none;
+
+    color: white;
+
+    padding: 12px 18px;
+
+    border-radius: 14px;
+
+    font-weight: 700;
+
+    background:
+        linear-gradient(135deg,
+            rgba(255, 0, 204, 0.25),
+            rgba(0, 212, 255, 0.2));
+
+    border:
+        1px solid rgba(255, 255, 255, 0.08);
+
+    transition: 0.3s;
+
+    position: relative;
+}
+
+.fav-link:hover {
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 0 25px rgba(255, 0, 204, 0.25);
+}
+
+/* FAVORITE COUNT */
+.fav-count {
+
+    margin-left: 8px;
+
+    background:
+        linear-gradient(135deg,
+            #ff006e,
+            #ff4d6d);
+
+    padding: 4px 9px;
+
+    border-radius: 50px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+
+    text-align: center;
+
+    padding: 50px 20px 20px;
+}
+
+.hero h1 {
+
+    margin: 0;
+
+    font-size: 56px;
+
+    font-weight: 900;
+
+    background:
+        linear-gradient(90deg,
+            #ffffff,
+            #d4d4ff,
+            #00d4ff);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-shadow:
+        0 0 35px rgba(0, 212, 255, 0.25);
+}
+
+/* CONTAINER */
+.container {
+
+    padding: 40px;
+}
+
+/* GRID */
+.grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fill, minmax(280px, 1fr));
+
+    gap: 30px;
+}
+
+/* CARD */
+.card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(145deg,
+            rgba(255, 255, 255, 0.12),
+            rgba(255, 255, 255, 0.04));
+
+    border:
+        1px solid rgba(255, 255, 255, 0.08);
+
+    backdrop-filter: blur(16px);
+
+    transition: 0.35s;
+
+    box-shadow:
+        0 0 25px rgba(255, 0, 204, 0.08),
+        0 0 50px rgba(0, 212, 255, 0.08);
+}
+
+/* HOVER */
+.card:hover {
+
+    transform:
+        translateY(-10px) scale(1.03);
+
+    box-shadow:
+        0 0 35px rgba(255, 0, 204, 0.18),
+        0 0 70px rgba(0, 212, 255, 0.18);
+}
+
+/* CARD GLOW */
+.card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -120px;
+    left: -120px;
+
+    width: 240px;
+    height: 240px;
+
+    background:
+        radial-gradient(circle,
+            rgba(255, 0, 204, 0.18),
+            transparent 70%);
+}
+
+/* RANK */
+.rank {
+
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    background:
+        linear-gradient(135deg,
+            #ffd700,
+            #ffb703);
+
+    color: black;
+
+    padding: 7px 14px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 0 18px rgba(255, 215, 0, 0.35);
+}
+
+/* IMAGE */
+.img-container {
+
+    width: 170px;
+    height: 170px;
+
+    margin: 20px auto;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    padding: 6px;
+
+    background:
+        linear-gradient(135deg,
+            #ff00cc,
+            #00d4ff);
+
+    box-shadow:
+        0 0 30px rgba(255, 0, 204, 0.25);
+}
+
+.player-img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    transition: 0.35s;
+}
+
+.card:hover .player-img {
+
+    transform: scale(1.08);
+}
+
+/* NAME */
+.card h3 {
+
+    margin: 15px 0 8px;
+
+    font-size: 25px;
+
+    font-weight: 800;
+}
+
+/* TEXT */
+.card p {
+
+    margin: 6px 0;
+
+    color: #d1d5db;
+
+    font-size: 15px;
+}
+
+/* BUTTON */
+.profile-btn {
+
+    margin-top: 18px;
+
+    border: none;
+
+    padding: 12px 22px;
+
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    color: white;
+
+    font-weight: bold;
+
+    background:
+        linear-gradient(135deg,
+            #ff00cc,
+            #3333ff);
+
+    transition: 0.3s;
+}
+
+.profile-btn:hover {
+
+    transform: scale(1.05);
+
+    box-shadow:
+        0 0 25px rgba(255, 0, 204, 0.35);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px) {
+
+    .navbar {
+
+        flex-direction: column;
+    }
+
+    .hero h1 {
+
+        font-size: 38px;
+    }
+
+    .container {
+
+        padding: 20px;
+    }
+
+    .grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    #search {
+
+        width: 100%;
+    }
+
+}
